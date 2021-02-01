@@ -1,7 +1,7 @@
 # BLETesting
 
 **configExperiments.py**
-This program scans for 30 packets from a beacon then uploads each packet with scenario information to our database. A summary of the trial with the mean, median, standard deviation, etc will also be added to our database in a seperate collection.
+This program scans for 30 packets from a beacon then uploads each packet with scenario information to our database (in a collection titled "beaconConfig"). A summary of the trial with the mean, median, standard deviation, etc will also be added to our database in a seperate collection ("beaconConfigStats").
 
 In order to start scanning, launch the program by typing 'python3 configExperiments.py' followed by your beacon minor, obstacle between anchor, distance from anchor, transmission power, and direction you are facing. An example being 'python3 configExperiments.py 213 Desk 7m -8dBm N'
 
