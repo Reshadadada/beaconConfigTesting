@@ -20,7 +20,14 @@ transmission_power = sys.argv[4]
 direction = sys.argv[5]
 scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
 
-delay = int(input("Enter the number of seconds to delay the start of scanning by: "))
+delay = None
+while delay is None:
+    user_input = input("Enter the number of seconds to delay the start of scanning by: ")
+    try:
+        delay = int(user_input)
+    except ValueError:
+        print("that is not a valid number, please enter a number")
+
 
 #rssi packets and info will be stored in this list
 data_entries = []
