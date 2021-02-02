@@ -24,7 +24,7 @@ For direction, type N for north, S for south, E for east, and W for west. North 
 Hit Ctrl C to cancel the program if you mistype the minor value.
 
 **singularDelayed.py**
-Simular to **singularTest.py** but allows you to input a delayed time to get in position before the scanning starts. After launching, the program will prompt for the number of seconds to delay scanning by.
+Simular to 'singularTest.py' but allows you to input a delayed time to get in position before the scanning starts. After launching, the program will prompt for the number of seconds to delay scanning by.
 
 **completeConfigTests**
 Simular to 'configTests.py' but does a test for each distance as well
