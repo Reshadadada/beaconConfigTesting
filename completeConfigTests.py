@@ -58,7 +58,7 @@ if __name__ == "__main__":
         for direc in direction_list:
             direction = direc
             scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
-            input("Press Enter then face " + str(direction)")
+            input("Press Enter then face " + str(direction))
             scanner = BeaconScanner(callback,
                 # remove the following line to see packets from all beacons
                 device_filter = IBeaconFilter(minor = beacon_minor), 
