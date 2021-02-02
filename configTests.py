@@ -50,19 +50,18 @@ def callback(bt_addr, rssi, packet, additional_info):
     data_entries.append(entry)
 
 
-if __name__ == "__main__":
-    scanner = BeaconScanner(callback,
-        # remove the following line to see packets from all beacons
-        device_filter = IBeaconFilter(minor = beacon_minor), 
-        packet_filter=None
-    )
-    
+if __name__ == "__main__":    
     for direc in direction_list:
         direction = direc
         scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
         input("Please face " + str(direction) + " then press Enter to start scanning")
         time.sleep(3)
         print("Scan started at ", datetime.now())
+        scanner = BeaconScanner(callback,
+            # remove the following line to see packets from all beacons
+            device_filter = IBeaconFilter(minor = beacon_minor), 
+            packet_filter=None
+        )
         scanner.start()
 
         #loop that stops scanning after 30 samples are collected.
