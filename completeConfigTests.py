@@ -15,7 +15,7 @@ if (len(sys.argv))!=5:
     sys.exit("Usage: beacon_minor obstacle transmission_power")
 beacon_minor = int(sys.argv[1])
 obstacle = sys.argv[2]
-distance = 0m
+distance = "0m"
 transmission_power = sys.argv[4]
 direction = " "
 scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
@@ -58,7 +58,7 @@ if __name__ == "__main__":
         for direc in direction_list:
             direction = direc
             scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
-            placeholder = input("Press Enter then face " + str(direction)")
+            input("Press Enter then face " + str(direction)")
             scanner = BeaconScanner(callback,
                 # remove the following line to see packets from all beacons
                 device_filter = IBeaconFilter(minor = beacon_minor), 
