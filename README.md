@@ -9,6 +9,7 @@ The transmission power will be shown as "Tx:" with the value next to it. An exam
 Click on the beacon you want to change the transmission power of and then choose settings. (If there are multiple and you are not sure which beacon is yours, read the mac address on the app and match it to the mac address written physically on your minew Beacon.) Click on "Tranmission Power" and choose the setting you want to collect samples for next. Click "save" and then go down and click "Reboot iBeacon" and click OK after being prompted for a password.
 
 ## Python programs for running tests
+### The main program used for testing will be 'configTests.py'
 **configTests.py**
 This program allows you to complete 4 tests (one for each direction) for a given distance.
 For each test, it scans for 30 packets from a beacon then uploads each packet with scenario information to our database (in a collection titled "beaconConfig"). A summary of the trial with the mean, median, standard deviation, etc will also be added to our database in a seperate collection ("beaconConfigStats").
