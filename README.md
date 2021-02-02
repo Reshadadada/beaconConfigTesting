@@ -10,18 +10,16 @@ Click on the beacon you want to change the transmission power of and then choose
 
 ## Python programs for running tests
 ### The main program recommended for testing is 'configTests.py'
-### before running any program, edit the python file and add your database ip into the 'mongo_db_uri' variable. Replace the dashes with the ip
+Before running any program, edit the python file and add your database ip into the 'mongo_db_uri' variable. Replace the dashes with the ip.
 
 **configTests.py**
 This program allows you to complete 4 tests (one for each direction) for a given distance.
 For each test, it scans for 30 packets from a beacon then uploads each packet with scenario information to our database (in a collection titled "beaconConfig"). A summary of the trial with the mean, median, standard deviation, etc will also be added to our database in a seperate collection ("beaconConfigStats").
-
 In order to start scanning, launch the program by typing 'python3 configTests.py' followed by your beacon minor, obstacle between anchor, distance from anchor, and transmission power. An example being 'python3 configTests.py 213 Desk 7m -8dBm'
 
 **singularTest.py**
 Allows you to specify and do only one specific test (so one given direction rather than all four).
 In order to start scanning, launch the program by typing 'python3 singularTest.py' followed by your beacon minor, obstacle between anchor, distance from anchor, transmission power, and direction you are facing. An example being 'python3 singularTest.py 213 Desk 7m -8dBm N'
-
 If there are no obstacles, type "NONE" 
 For direction, type N for north, S for south, E for east, and W for west. North meaning you are facing towards the anchor, South meaning you are facing away from the anchor, and so on.
 Hit Ctrl C to cancel the program if you mistype the minor value.
