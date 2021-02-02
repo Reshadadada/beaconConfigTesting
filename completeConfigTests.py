@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import time, socket, fcntl, struct
 import statistics
 
-if (len(sys.argv))!=5:
+if (len(sys.argv))!=4:
     print ("Please input your beacon minor, obstacle, and transmission power after program name")
     print ("example of a valid input after program name: 123 NONE -4dBm")
     sys.exit("Usage: beacon_minor obstacle transmission_power")
