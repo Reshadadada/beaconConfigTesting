@@ -52,18 +52,18 @@ def callback(bt_addr, rssi, packet, additional_info):
 
 
 if __name__ == "__main__":
-    scanner = BeaconScanner(callback,
-        # remove the following line to see packets from all beacons
-        device_filter = IBeaconFilter(minor = beacon_minor), 
-        packet_filter=None
-    )
     for dist in distance_list:
         distance = dist
         print ("Please be ", distance, " away from the anchor")
         for direc in direction_list:
             direction = direc
             scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
-            placeholder = input("Please face " + str(direction) +  " then press Enter to start scanning")
+            placeholder = input("Press Enter then face " + str(direction)")
+            scanner = BeaconScanner(callback,
+                # remove the following line to see packets from all beacons
+                device_filter = IBeaconFilter(minor = beacon_minor), 
+                packet_filter=None
+            )
             time.sleep(3)
             print("Scan started at ", datetime.now())
             scanner.start()
