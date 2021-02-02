@@ -78,7 +78,7 @@ if __name__ == "__main__":
             print("Writing errors to db:", e)
 
         rssi_list = [s["RSSI"] for s in data_entries]
-
+        data_entries.clear()
 
         meanVal = sum(rssi_list)/len(rssi_list)
         minVal = min(rssi_list)
@@ -93,3 +93,4 @@ if __name__ == "__main__":
             x = statcol.insert_one({"scenario": scenario, "mean" : meanVal, "min": minVal, "max": maxVal, "median": medianVal, "std": std})
         except Exception as e:
             print("Writing errors to db:", e)
+        rssi_list.clear()
