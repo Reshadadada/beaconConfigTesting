@@ -1,6 +1,6 @@
 from beacontools import BeaconScanner, EddystoneTLMFrame, EddystoneFilter, IBeaconFilter
 
-import logging, os, sys
+import logging, os, sys, time
 from datetime import datetime
 import threading
 import csv, codecs
@@ -55,6 +55,7 @@ if __name__ == "__main__":
         device_filter = IBeaconFilter(minor = beacon_minor), 
         packet_filter=None
     )
+    time.sleep(3)
     print("Scan started at ", datetime.now())
     scanner.start()
 
