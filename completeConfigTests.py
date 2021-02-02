@@ -16,7 +16,7 @@ if (len(sys.argv))!=4:
 beacon_minor = int(sys.argv[1])
 obstacle = sys.argv[2]
 distance = "0m"
-transmission_power = sys.argv[4]
+transmission_power = sys.argv[3]
 direction = " "
 scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
 
