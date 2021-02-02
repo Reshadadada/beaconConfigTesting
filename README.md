@@ -6,7 +6,7 @@ On the BeaconSet app on your phone, click on the beacon you want to change the m
 
 **Changing transmission power of a beacon**
 The transmission power will be shown as "Tx:" with the value next to it. An example being "Tx: -12dBm" 
-Click on the beacon you want to change the transmission power of and then choose settings. (If there are multiple and you are not sure which beacon is yours, read the mac address on the app and match it to the mac address written physically on your minew Beacon.) Click on "Tranmission Power" and choose the setting you want to collect samples for next. Click "save" and then go down and click "Reboot iBeacon" and click OK after being prompted for a password.
+Click on the beacon you want to change the transmission power of and then choose settings. (If there are multiple and you are not sure which beacon is yours, read the mac address on the app and match it to the mac address written physically on your minew Beacon.) Click on "Transmission Power" and choose the setting you want to collect samples for next. Click "save" and then go down and click "Reboot iBeacon" and click OK after being prompted for a password.
 
 ## Python programs for running tests
 ### The main program recommended for testing is 'configTests.py'
