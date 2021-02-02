@@ -54,14 +54,15 @@ if __name__ == "__main__":
     for direc in direction_list:
         direction = direc
         scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
-        input("Please face " + str(direction) + " then press Enter to start scanning")
-        time.sleep(3)
-        print("Scan started at ", datetime.now())
+        input("Press Enter then face " + str(direction)")
+        
         scanner = BeaconScanner(callback,
             # remove the following line to see packets from all beacons
             device_filter = IBeaconFilter(minor = beacon_minor), 
             packet_filter=None
         )
+        time.sleep(3)
+        print("Scan started at ", datetime.now())
         scanner.start()
 
         #loop that stops scanning after 30 samples are collected.
