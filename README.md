@@ -10,6 +10,7 @@ Click on the beacon you want to change the transmission power of and then choose
 
 ## Python programs for running tests
 ### The main program recommended for testing is 'configTests.py'
+Each test has a 3 second delay before scanning so that you have time to get into position after starting.
 Before running any program, edit the python file and add your database ip into the 'mongo_db_uri' variable. Replace the dashes with the ip.
 
 **configTests.py**
