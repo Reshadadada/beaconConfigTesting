@@ -63,7 +63,7 @@ if __name__ == "__main__":
         for direc in direction_list:
             direction = direc
             scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direction
-            input("Please face ", direction, " then press Enter to start scanning")
+            placeholder = input("Please face ", direction, " then press Enter to start scanning")
             time.sleep(3)
             print("Scan started at ", datetime.now())
             scanner.start()
