@@ -22,7 +22,7 @@ scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direc
 
 #rssi packets and info will be stored in this list
 data_entries = []
-direction_list = ["North","East","West","South"]
+direction_list = ["North","East","South","West"]
 distance_list = ["0m", "1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m"]
 
 mongo_db_uri = "mongodb://---.---.-.---/" # TODO: change this to database ip...
