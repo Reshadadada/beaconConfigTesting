@@ -27,4 +27,4 @@ Hit Ctrl C to cancel the program if you mistype the minor value.
 
 
 **completeConfigTests**
-Simular to 'configTests.py' but does a test for each distance as well. In order to start scanning, launch the program by typing 'python3 completeConfigTests.py' followed by your beacon minor, obstacle between anchor, and transmission power. An example being 'python3 completeConfigTests.py 213 NONE -8dBm'
+Simular to 'configTests.py' but does a test for each distance as well (0m to 8m, but you can remove or add more distances by adjusting the "distance_list" list in the code). In order to start scanning, launch the program by typing 'python3 completeConfigTests.py' followed by your beacon minor, obstacle between anchor, and transmission power. An example being 'python3 completeConfigTests.py 213 NONE -8dBm' 
