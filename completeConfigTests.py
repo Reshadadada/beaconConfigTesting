@@ -25,7 +25,7 @@ data_entries = []
 direction_list = ["North","East","South","West"]
 distance_list = ["0m", "1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m"]
 
-mongo_db_uri = "mongodb://---.---.-.---/" # TODO: change this to database ip...
+mongo_db_uri = "mongodb://piclient:82p9vjhk4akp2fd2@172.16.10.202:27017/BBCT" # TODO: change this to database ip...
 #from Ruiqi and Ruixuan's code
 #---------------------------------Connection-------------------------------------
 try:
