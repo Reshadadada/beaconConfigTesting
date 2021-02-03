@@ -24,7 +24,7 @@ scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direc
 data_entries = []
 direction_list = ["North","East","South","West"]
 
-mongo_db_uri = "mongodb://---.---.-.---/" # TODO: change this to database ip...
+mongo_db_uri = "mongodb://piclient:82p9vjhk4akp2fd2@172.16.10.202:27017/BBCT" # TODO: change this to database ip...
 #from Ruiqi and Ruixuan's code
 #---------------------------------Connection-------------------------------------
 try:
