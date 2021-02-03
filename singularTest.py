@@ -11,7 +11,7 @@ import statistics
 
 if (len(sys.argv))!=6:
     print ("Please input your beacon minor, obstacle, distance from anchor, transmission power, and direction after program name")
-    print ("example of a valid input after program name: 123 NONE 4m -4dBm N")
+    print ("example of a valid input after program name: 123 NONE 4m -4dBm North")
     sys.exit("Usage: beacon_minor obstacle distance transmission_power direction")
 beacon_minor = int(sys.argv[1])
 obstacle = sys.argv[2]
@@ -23,7 +23,7 @@ scenario = obstacle + " " +  distance + " " +  transmission_power + " " +  direc
 #rssi packets and info will be stored in this list
 data_entries = []
 
-mongo_db_uri = "mongodb://---.---.-.---/" # TODO: change this to database ip...
+mongo_db_uri = "mongodb://piclient:82p9vjhk4akp2fd2@172.16.10.202:27017/BBCT" # TODO: change this to database ip...
 #from Ruiqi and Ruixuan's code
 #---------------------------------Connection-------------------------------------
 try:
