@@ -59,12 +59,12 @@ if __name__ == "__main__":
     print("Scan started at ", datetime.now())
     scanner.start()
 
-    #loop that stops scanning after 30 samples are collected. 
+    #loop that stops scanning after 60 samples are collected. 
     #uploads all entries to database after
     while True:
-        if len(data_entries) == 30:
+        if len(data_entries) == 60:
             scanner.stop()
-            print("Reached 30 samples, trial completed at ", datetime.now())
+            print("Reached 60 samples, trial completed at ", datetime.now())
             break
     try:
         x = rawcol.insert_many(data_entries)
